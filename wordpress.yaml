@@ -1,15 +1,15 @@
-#apiVersion: autoscaling/v1
-#kind: HorizontalPodAutoscaler
-#metadata:
-#  name: wordpress-hpa
-#spec:
-#  maxReplicas: 5
-#minReplicas: 2
-  #  scaleTargetRef:
-  #   apiVersion: apps/v1
-  # kind: Deployment
-  # name: wordpress-deployment
-  #targetCPUUtilizationPercentage: 70
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: wordpress-hpa
+spec:
+  maxReplicas: 5
+  minReplicas: 2
+  scaleTargetRef:
+     apiVersion: apps/v1
+   kind: Deployment
+   name: wordpress-deployment
+  targetCPUUtilizationPercentage: 70
 
 ---
 apiVersion: apps/v1
