@@ -44,7 +44,7 @@ spec:
           - name: WORDPRESS_DB_HOST
             value: kang-db.mysql.database.azure.com
           - name: WORDPRESS_DB_PASSWORD
-            value: It123!
+            value: It12345!
             # wordpress wp-config.php
           resources:
             requests:
