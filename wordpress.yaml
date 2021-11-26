@@ -31,7 +31,7 @@ spec:
         app: wordpress
     spec:
       containers:
-        - image: wordpress
+        - image: kangregistry.azurecr.io/wordpress
           name: wordpress
           ports:
           - containerPort: 80
